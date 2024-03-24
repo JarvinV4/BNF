@@ -4,11 +4,15 @@
 <tkn_repetir> ::= "mientras" <condicion> "{" <listasentencia> "}" "fin mientras"
 <tkn_asignacion> ::= <identificador> "=" <expresion>
 <tkn_aritmetica> ::= <operando> <operador> <operando>
+<tkn_cadena> ::= <identificador> "=" <cadena>
 <expresion> ::= <operando> | <operando> <operador> <expresion>
 <operando> ::= <identificador> | <numero>
 <operador> ::= "+" | "-" | "*" | "/"
 <identificador> ::= <letra> | <letra> <identificador> | <letra> <digito> | <letra> <digito> <identificador>
 <numero> ::= <digito> | <digito> <numero>
+<cadena> ::= '"' <careacteres> '"'
+<caracteres>::= <caracter> | <caracter> <caracteres>
+<caracter>::= <letra> | <digito>
 <letra> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" 
 | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z"
 
