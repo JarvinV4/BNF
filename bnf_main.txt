@@ -4,7 +4,6 @@
 <tkn_repetir> ::= "mientras" <condicion> "{" <listasentencia> "}" "fin mientras"
 <tkn_asignacion> ::= <identificador> "=" <expresion>
 <tkn_aritmetica> ::= <int> <operador> <int>
-<tkn_cadena> ::= <identificador> "=" <cadena>
 <expresion> ::= <int> | <cadena> | <identificador>
 <operador> ::= "+" | "-" | "*" | "/"
 <identificador> ::= <caracter> | <caracter> <identificador> 
