@@ -9,7 +9,7 @@
 <tkn_switch_case>::= "switch" "(" <expresion> ")" "{" <lista_casos> "}" "fin switch"
 <lista_casos>::= <caso>  | <lista_casos> <caso>
 <caso>::= "case" <expresion> ":" <lista_sentencias>
-<expresion> ::= <int> | <cadena> | <identificador> | <expresion> "+" <expresion>
+<expresion> ::= <int> | <cadena> | <identificador> | <cadena> "+" <cadena>
 <operador> ::= "+" | "-" | "*" | "/"
 <identificador> ::= <caracter> | <caracter> <identificador> 
 <int> ::= <digito> | <digito> <int>
