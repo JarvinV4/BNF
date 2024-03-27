@@ -1,11 +1,14 @@
 <lenguaje> ::= <lista_sentencias>
-<sentencias> ::= <tkn_repetir> | <tkn_condicion> | <tkn_asignacion> | <tkn_aritmetica> | <tkn_imprimir> | <tkn_capturar> 
+<sentencias> ::= <tkn_repetir> | <tkn_condicion> | <tkn_asignacion> | <tkn_aritmetica> | <tkn_imprimir> | <tkn_capturar> | <tkn_switch_case>
 <lista_sentencias> ::= <sentencias> | <lista-sentencias> <sentencias>
 <tkn_repetir> ::= "mientras" <condicion> "{" <lista_sentencias> "}" "fin mientras"
 <tkn_asignacion> ::= <identificador> "=" <expresion>
 <tkn_aritmetica> ::= <expresion> <operador> <expresion>
 <tkn_imprimir>::= "imprimir" "(" <expresion> ")"
 <tkn_capturar>::= "capturar" "(" <identificador> ")"
+<tkn_switch_case>::= "switch" "(" <expresion> ")" "{" <lista_casos> "}" "fin switch"
+<lista_casos>::= <caso>  | <lista_casos> <caso>
+<caso>::= "case" <expresion> ":" <lista_sentencias>
 <expresion> ::= <int> | <cadena> | <identificador> | <expresion> "+" <expresion>
 <operador> ::= "+" | "-" | "*" | "/"
 <identificador> ::= <caracter> | <caracter> <identificador> 
