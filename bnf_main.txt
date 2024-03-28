@@ -1,5 +1,5 @@
 <lenguaje> ::= <lista_sentencias>
-<sentencias> ::= <tkn_repetir> | <tkn_condicion> | <tkn_asignacion> | <tkn_aritmetica> | <tkn_imprimir> | <tkn_capturar> | <tkn_switch_case>
+<sentencias> ::= <tkn_repetir> | <tkn_condicion> | <tkn_asignacion> | <tkn_aritmetica> | <tkn_imprimir> | <tkn_capturar> | <tkn_switch_case> | <tkn_def_funcion> | <tkn_llamar_funcion>
 <lista_sentencias> ::= <sentencias> | <lista-sentencias> <sentencias>
 <tkn_repetir> ::= "mientras" <condicion> "{" <lista_sentencias> "}" "fin mientras"
 <tkn_asignacion> ::= <identificador> "=" <expresion>
@@ -8,7 +8,14 @@
 <tkn_capturar>::= "capturar" "(" <identificador> ")"
 <tkn_switch_case>::= "switch" "(" <expresion> ")" "{" <lista_casos> "}" "fin switch"
 <lista_casos>::= <caso> | <lista_casos> <caso>
+<caso_default>::= "default" : <lista_sentencias>
 <caso>::= "case" <expresion> ":" <lista_sentencias>
+<tkn_def_funcion>::="funcion" <identificador> "(" <lista_parametros> ")" "{" <lista_sentencias> "}" "fin funcion"
+<tkn_llamar_funcion>::= <identificador> "(" <lista_argumentos> ")"
+<lista_parametros>::= <parametro> | <lista_parametros> "," <parametro>
+<parametro>::= <tipo_dato><identificador>
+<tipo_dato>::= "int" | "cadena"
+<lista_argumentos>::=<expresion> | <lista_argumentos> "," <expresion>
 <expresion> ::= <int> | <cadena> | <identificador> | <cadena> "+" <cadena>
 <operador> ::= "+" | "-" | "*" | "/"
 <identificador> ::= <caracter> | <caracter> <identificador> 
