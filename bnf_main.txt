@@ -7,7 +7,7 @@
 <tkn_imprimir>::= "imprimir" "(" <expresion> ")"
 <tkn_capturar>::= "capturar" "(" <identificador> ")"
 <tkn_switch_case>::= "switch" "(" <expresion> ")" "{" <lista_casos> "}" "fin switch"
-<lista_casos>::= <caso>  | <lista_casos> <caso>
+<lista_casos>::= <caso> | <lista_casos> <caso>
 <caso>::= "case" <expresion> ":" <lista_sentencias>
 <expresion> ::= <int> | <cadena> | <identificador> | <cadena> "+" <cadena>
 <operador> ::= "+" | "-" | "*" | "/"
