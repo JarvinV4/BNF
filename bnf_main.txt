@@ -12,6 +12,7 @@
 <caso>::= "case" <expresion> ":" <lista_sentencias> "break"
 <tkn_def_funcion>::="funcion" <identificador> "(" <lista_parametros> ")" "{" <lista_sentencias> "}" "fin funcion"
 <tkn_llamar_funcion>::= <identificador> "(" <lista_argumentos> ")"
+<tkn_retorno>::="return" <expresion>
 <lista_parametros>::= <parametro> | <lista_parametros> "," <parametro>
 <parametro>::= <tipo_dato><identificador>
 <tipo_dato>::= "int" | "cadena"
