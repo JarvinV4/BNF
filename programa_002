@@ -1,6 +1,6 @@
 numero_inicial = 0
 numero_final = 5
-mientras numero_inicial < numero_final {
+mientras numero_inicial < numero_final { 
   imprimir(numero_inicial)  
   numero_inicial = numero_inicial + 1
 } fin mientras
