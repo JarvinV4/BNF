@@ -1,0 +1,18 @@
+imprimir("Selecciona la operacion que deseas realizar: ")
+imprimir("Suma(+)  Resta(-)  Multiplicacion(*)  Division(/): ")
+capturar(operador)
+imprimir("Escribe el primer numero: ")
+capturar(numero_1)
+imprimir("Escribe el segundo numero: ")
+capturar(numero_2)
+switch(operador){
+  case"+":
+    imprimir(numero_1 + numero_2)
+  case"-":
+    imprimir(numero_1 - numero_2)
+  case"*":
+    imprimir(numero_1 * numero_2)
+  case"/":
+    imprimir(numero_1 / numero_2)
+
+} fin switch
