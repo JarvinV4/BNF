@@ -9,7 +9,7 @@
 <tkn_switch_case>::= "switch" "(" <expresion> ")" "{" <lista_casos> "}" "fin switch"
 <lista_casos>::= <caso> | <lista_casos> <caso>
 <caso_default>::= "default" : <lista_sentencias>
-<caso>::= "case" <expresion> ":" <lista_sentencias>
+<caso>::= "case" <expresion> ":" <lista_sentencias> "break"
 <tkn_def_funcion>::="funcion" <identificador> "(" <lista_parametros> ")" "{" <lista_sentencias> "}" "fin funcion"
 <tkn_llamar_funcion>::= <identificador> "(" <lista_argumentos> ")"
 <lista_parametros>::= <parametro> | <lista_parametros> "," <parametro>
