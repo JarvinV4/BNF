@@ -1,0 +1,5 @@
+imprimir("Escribe los grados fahrenheit para convertirlos a celcius: ")
+capturar (fahrenheit)
+celcius = (fahrenheit - 32) * 5 / 9
+imprimir("El resultado en grados celcius es: ")
+imprimir(ceilcius)
