@@ -52,7 +52,7 @@ imprimir        { contador_imprimir++; }
 
 int main() {
     FILE *archivo;
-    archivo = fopen("prueba.txt", "r");
+    archivo = fopen("programa_005.prg", "r");
     if (archivo == NULL) {
         fprintf(stderr, "No se pudo abrir el archivo\n");
         return 1;
